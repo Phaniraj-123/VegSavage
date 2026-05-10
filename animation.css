@@ -1,0 +1,512 @@
+/* =========================
+   VEGSAVAGE - ANIMATIONS.CSS
+========================= */
+
+/* =========================
+   FLOATING
+========================= */
+
+@keyframes floating {
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-20px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+
+}
+
+/* =========================
+   ROTATE
+========================= */
+
+@keyframes rotateSlow {
+
+  0%{
+    transform:rotate(0deg);
+  }
+
+  100%{
+    transform:rotate(360deg);
+  }
+
+}
+
+/* =========================
+   GLOW PULSE
+========================= */
+
+@keyframes glowPulse {
+
+  0%{
+    box-shadow:
+    0 0 0px rgba(61,220,132,0.4);
+  }
+
+  50%{
+    box-shadow:
+    0 0 40px rgba(61,220,132,0.7);
+  }
+
+  100%{
+    box-shadow:
+    0 0 0px rgba(61,220,132,0.4);
+  }
+
+}
+
+/* =========================
+   HERO TEXT
+========================= */
+
+@keyframes heroText {
+
+  0%{
+    opacity:0;
+    transform:
+    translateY(100px);
+  }
+
+  100%{
+    opacity:1;
+    transform:
+    translateY(0px);
+  }
+
+}
+
+/* =========================
+   FADE UP
+========================= */
+
+@keyframes fadeUp {
+
+  0%{
+    opacity:0;
+    transform:
+    translateY(80px);
+  }
+
+  100%{
+    opacity:1;
+    transform:
+    translateY(0);
+  }
+
+}
+
+/* =========================
+   FADE LEFT
+========================= */
+
+@keyframes fadeLeft {
+
+  0%{
+    opacity:0;
+    transform:
+    translateX(-80px);
+  }
+
+  100%{
+    opacity:1;
+    transform:
+    translateX(0);
+  }
+
+}
+
+/* =========================
+   FADE RIGHT
+========================= */
+
+@keyframes fadeRight {
+
+  0%{
+    opacity:0;
+    transform:
+    translateX(80px);
+  }
+
+  100%{
+    opacity:1;
+    transform:
+    translateX(0);
+  }
+
+}
+
+/* =========================
+   ZOOM IN
+========================= */
+
+@keyframes zoomIn {
+
+  0%{
+    opacity:0;
+    transform:scale(0.7);
+  }
+
+  100%{
+    opacity:1;
+    transform:scale(1);
+  }
+
+}
+
+/* =========================
+   STEAM EFFECT
+========================= */
+
+@keyframes steam {
+
+  0%{
+    transform:
+    translateY(0)
+    scale(1);
+
+    opacity:0;
+  }
+
+  50%{
+    opacity:0.4;
+  }
+
+  100%{
+    transform:
+    translateY(-120px)
+    scale(2);
+
+    opacity:0;
+  }
+
+}
+
+/* =========================
+   SHIMMER
+========================= */
+
+@keyframes shimmer {
+
+  0%{
+    background-position:-500px 0;
+  }
+
+  100%{
+    background-position:500px 0;
+  }
+
+}
+
+/* =========================
+   BORDER FLOW
+========================= */
+
+@keyframes borderFlow {
+
+  0%{
+    border-color:#3ddc84;
+  }
+
+  50%{
+    border-color:#d4af37;
+  }
+
+  100%{
+    border-color:#3ddc84;
+  }
+
+}
+
+/* =========================
+   BOUNCE
+========================= */
+
+@keyframes bounce {
+
+  0%,
+  100%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-15px);
+  }
+
+}
+
+/* =========================
+   SPIN
+========================= */
+
+@keyframes spin {
+
+  0%{
+    transform:rotate(0deg);
+  }
+
+  100%{
+    transform:rotate(360deg);
+  }
+
+}
+
+/* =========================
+   WAVE
+========================= */
+
+@keyframes wave {
+
+  0%{
+    transform:rotate(0deg);
+  }
+
+  25%{
+    transform:rotate(8deg);
+  }
+
+  50%{
+    transform:rotate(0deg);
+  }
+
+  75%{
+    transform:rotate(-8deg);
+  }
+
+  100%{
+    transform:rotate(0deg);
+  }
+
+}
+
+/* =========================
+   MARQUEE
+========================= */
+
+@keyframes marquee {
+
+  0%{
+    transform:translateX(0);
+  }
+
+  100%{
+    transform:translateX(-100%);
+  }
+
+}
+
+/* =========================
+   GRADIENT FLOW
+========================= */
+
+@keyframes gradientFlow {
+
+  0%{
+    background-position:0% 50%;
+  }
+
+  50%{
+    background-position:100% 50%;
+  }
+
+  100%{
+    background-position:0% 50%;
+  }
+
+}
+
+/* =========================
+   SCALE PULSE
+========================= */
+
+@keyframes scalePulse {
+
+  0%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.08);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+
+}
+
+/* =========================
+   BLUR REVEAL
+========================= */
+
+@keyframes blurReveal {
+
+  0%{
+    opacity:0;
+    filter:blur(20px);
+  }
+
+  100%{
+    opacity:1;
+    filter:blur(0);
+  }
+
+}
+
+/* =========================
+   FLOATING ORBS
+========================= */
+
+@keyframes orbFloat {
+
+  0%{
+    transform:
+    translateY(0px)
+    translateX(0px);
+  }
+
+  25%{
+    transform:
+    translateY(-30px)
+    translateX(20px);
+  }
+
+  50%{
+    transform:
+    translateY(-60px)
+    translateX(0px);
+  }
+
+  75%{
+    transform:
+    translateY(-30px)
+    translateX(-20px);
+  }
+
+  100%{
+    transform:
+    translateY(0px)
+    translateX(0px);
+  }
+
+}
+
+/* =========================
+   BUTTON SHINE
+========================= */
+
+@keyframes buttonShine {
+
+  0%{
+    left:-100%;
+  }
+
+  100%{
+    left:120%;
+  }
+
+}
+
+/* =========================
+   CARD FLOAT
+========================= */
+
+@keyframes cardFloat {
+
+  0%{
+    transform:
+    translateY(0px)
+    rotate(0deg);
+  }
+
+  50%{
+    transform:
+    translateY(-15px)
+    rotate(2deg);
+  }
+
+  100%{
+    transform:
+    translateY(0px)
+    rotate(0deg);
+  }
+
+}
+
+/* =========================
+   HERO OVERLAY
+========================= */
+
+@keyframes overlayPulse {
+
+  0%{
+    opacity:0.5;
+  }
+
+  50%{
+    opacity:0.8;
+  }
+
+  100%{
+    opacity:0.5;
+  }
+
+}
+
+/* =========================
+   CLASSES
+========================= */
+
+.fade-up{
+  animation:fadeUp 1s ease forwards;
+}
+
+.fade-left{
+  animation:fadeLeft 1s ease forwards;
+}
+
+.fade-right{
+  animation:fadeRight 1s ease forwards;
+}
+
+.zoom-in{
+  animation:zoomIn 1s ease forwards;
+}
+
+.blur-reveal{
+  animation:blurReveal 1s ease forwards;
+}
+
+.float{
+  animation:floating 5s ease-in-out infinite;
+}
+
+.glow{
+  animation:glowPulse 3s infinite;
+}
+
+.rotate{
+  animation:rotateSlow 12s linear infinite;
+}
+
+.bounce{
+  animation:bounce 2s infinite;
+}
+
+.scale-pulse{
+  animation:scalePulse 3s infinite;
+}
+
+.card-float{
+  animation:cardFloat 5s ease infinite;
+}
+
+.gradient-flow{
+  background-size:300% 300%;
+  animation:gradientFlow 10s ease infinite;
+}

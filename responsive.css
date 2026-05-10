@@ -1,0 +1,410 @@
+/* =========================
+   VEGSAVAGE - RESPONSIVE.CSS
+========================= */
+
+/* =========================
+   LARGE LAPTOPS
+========================= */
+
+@media(max-width:1400px){
+
+  .hero-content h1{
+    font-size:5.5rem;
+  }
+
+  .section-title h2{
+    font-size:3.5rem;
+  }
+
+  .dish-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .menu-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+}
+
+/* =========================
+   LAPTOPS
+========================= */
+
+@media(max-width:1200px){
+
+  section{
+    padding:100px 6%;
+  }
+
+  .hero-content h1{
+    font-size:4.8rem;
+  }
+
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+  .gallery-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .footer-top{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .footer-middle{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media(max-width:992px){
+
+  .navbar{
+    padding:18px 25px;
+  }
+
+  nav{
+    gap:20px;
+  }
+
+  nav a{
+    font-size:0.95rem;
+  }
+
+  .hero-content h1{
+    font-size:4rem;
+  }
+
+  .hero-content p{
+    font-size:1rem;
+  }
+
+  .floating-card{
+    width:180px;
+  }
+
+  .floating-card img{
+    height:140px;
+  }
+
+  .stats-grid{
+    grid-template-columns:1fr;
+  }
+
+  .dish-grid{
+    grid-template-columns:1fr;
+  }
+
+  .menu-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .gallery-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .testimonial-card{
+    min-width:320px;
+  }
+
+  .newsletter-form{
+    flex-direction:column;
+    width:100%;
+  }
+
+  .newsletter-form input{
+    width:100%;
+  }
+
+}
+
+/* =========================
+   MOBILE NAVIGATION
+========================= */
+
+@media(max-width:768px){
+
+  body{
+    cursor:auto;
+  }
+
+  .cursor{
+    display:none;
+  }
+
+  .navbar{
+    top:15px;
+    width:95%;
+    padding:18px 20px;
+    border-radius:24px;
+    flex-wrap:wrap;
+    gap:20px;
+  }
+
+  nav{
+    width:100%;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:16px;
+  }
+
+  .nav-btn{
+    width:100%;
+  }
+
+  .hero{
+    padding-top:180px;
+  }
+
+  .hero-content h1{
+    font-size:3.2rem;
+  }
+
+  .hero-content p{
+    font-size:0.95rem;
+    line-height:1.8;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .primary-btn,
+  .secondary-btn{
+    width:100%;
+    max-width:320px;
+  }
+
+  .floating-card{
+    display:none;
+  }
+
+  .section-title h2{
+    font-size:2.8rem;
+  }
+
+  .experience-content h2{
+    font-size:2.8rem;
+  }
+
+  .menu-grid{
+    grid-template-columns:1fr;
+  }
+
+  .gallery-grid{
+    grid-template-columns:1fr;
+  }
+
+  .wide{
+    grid-column:span 1;
+  }
+
+  .tall{
+    grid-row:span 1;
+  }
+
+  .reservation-box{
+    padding:40px 25px;
+  }
+
+  .footer-top{
+    grid-template-columns:1fr;
+  }
+
+  .footer-middle{
+    padding:35px 25px;
+  }
+
+  .newsletter-content h2{
+    font-size:1.8rem;
+  }
+
+  .footer-bottom{
+    flex-direction:column;
+    text-align:center;
+  }
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:576px){
+
+  section{
+    padding:90px 5%;
+  }
+
+  .logo{
+    font-size:1.7rem;
+  }
+
+  nav{
+    gap:12px;
+  }
+
+  nav a{
+    font-size:0.9rem;
+  }
+
+  .hero-content h1{
+    font-size:2.5rem;
+    line-height:1.2;
+  }
+
+  .hero-tag{
+    font-size:0.8rem;
+    padding:8px 16px;
+  }
+
+  .section-title span{
+    font-size:12px;
+  }
+
+  .section-title h2{
+    font-size:2.2rem;
+  }
+
+  .about-content p,
+  .experience-content p{
+    font-size:0.95rem;
+    line-height:1.9;
+  }
+
+  .dish-card img{
+    height:260px;
+  }
+
+  .dish-info{
+    padding:25px;
+  }
+
+  .dish-info h3{
+    font-size:1.5rem;
+  }
+
+  .menu-item{
+    padding:28px;
+  }
+
+  .testimonial-card{
+    min-width:280px;
+    padding:30px;
+  }
+
+  .reservation-box{
+    padding:30px 20px;
+  }
+
+  input{
+    padding:16px;
+  }
+
+  .footer-brand h2{
+    font-size:2.2rem;
+  }
+
+  .newsletter-content h2{
+    font-size:1.5rem;
+  }
+
+  .footer-bottom-right{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+}
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media(max-width:420px){
+
+  .hero-content h1{
+    font-size:2.1rem;
+  }
+
+  .hero-content p{
+    font-size:0.88rem;
+  }
+
+  .primary-btn,
+  .secondary-btn,
+  .nav-btn{
+    padding:14px 20px;
+    font-size:0.9rem;
+  }
+
+  .section-title h2{
+    font-size:1.9rem;
+  }
+
+  .experience-content h2{
+    font-size:2rem;
+  }
+
+  .stat-card h3{
+    font-size:2.4rem;
+  }
+
+  .dish-info h3{
+    font-size:1.3rem;
+  }
+
+  .footer-middle{
+    gap:25px;
+  }
+
+  .newsletter-form input{
+    min-width:unset;
+  }
+
+}
+
+/* =========================
+   ULTRA WIDE SCREENS
+========================= */
+
+@media(min-width:1800px){
+
+  body{
+    max-width:1800px;
+    margin:auto;
+  }
+
+  .hero-content h1{
+    font-size:8rem;
+  }
+
+  .section-title h2{
+    font-size:5rem;
+  }
+
+  .experience-content h2{
+    font-size:5rem;
+  }
+
+}
+
+
+/* ── about.jpg
+│   │   ├── dosa.jpg
+│   │   ├── paneer.jpg
+│   │   ├── noodles.jpg
+│   │   ├── dish1.jpg
+│   │   ├── dish2.jpg
+│   │   ├── dish3.jpg
+│   │   ├── gallery1.jpg
+│   │   ├── gallery2.jpg
+│   │   ├── gallery3.jpg
+│   │   ├── gallery4.jpg
+│   │   ├── gallery5.jpg */

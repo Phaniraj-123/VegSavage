@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VegSavage | Pure Vegetarian Luxury</title>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS FILES -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader">
+    <h1>VegSavage</h1>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor"></div>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar glass">
+
+    <div class="logo">
+      VegSavage
+    </div>
+
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reservation">Reservation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="nav-btn">
+      Book Table
+    </button>
+
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+
+    <video autoplay muted loop playsinline>
+      <source src="assets/videos/restaurant.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content reveal">
+
+      <span class="hero-tag">
+        100% PURE VEGETARIAN EXPERIENCE
+      </span>
+
+      <h2>
+        Where Pure Vegetarian <br>
+        Meets Savage Flavor
+      </h2>
+
+      <p>
+        Premium South Indian, North Indian & Global Cuisine crafted for unforgettable dining.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#menu"><button class="primary-btn">Explore Menu</button></a>
+        <a href="#reservation"><button class="secondary-btn">Reserve Now</button></a>
+      </div>
+
+    </div>
+
+    <div class="floating-card card-1 glass">
+      <img src="assets/images/dosa.jpg" alt="Masala Dosa">
+      <h3>Masala Dosa</h3>
+    </div>
+
+    <div class="floating-card card-2 glass">
+      <img src="assets/images/paneer.jpg" alt="Paneer Butter Masala">
+      <h3>Paneer Butter Masala</h3>
+    </div>
+
+    <div class="floating-card card-3 glass">
+      <img src="assets/images/noodles.jpg" alt="Hakka Noodles">
+      <h3>Hakka Noodles</h3>
+    </div>
+
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about section" id="about">
+
+    <div class="section-title reveal">
+      <span>ABOUT US</span>
+      <h2>Luxury Vegetarian Dining Reimagined</h2>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-image reveal-left">
+        <img src="assets/images/about.jpg" alt="Restaurant Interior">
+      </div>
+
+      <div class="about-content reveal-right">
+
+        <p>
+          VegSavage combines authentic Indian tradition with modern culinary artistry.
+          Our chefs craft unforgettable vegetarian experiences using fresh ingredients,
+          premium spices, and bold flavors.
+        </p>
+
+        <div class="stats-grid">
+
+          <div class="stat-card glass">
+            <h3 class="counter" data-target="35">0</h3>
+            <p>Signature Dishes</p>
+          </div>
+
+          <div class="stat-card glass">
+            <h3 class="counter" data-target="12000">0</h3>
+            <p>Happy Customers</p>
+          </div>
+
+          <div class="stat-card glass">
+            <h3 class="counter" data-target="15">0</h3>
+            <p>Expert Chefs</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SIGNATURE DISHES -->
+  <section class="signature section">
+
+    <div class="section-title reveal">
+      <span>SIGNATURE DISHES</span>
+      <h2>Chef Curated Favorites</h2>
+    </div>
+
+    <div class="dish-grid">
+
+      <div class="dish-card glass reveal">
+        <img src="assets/images/dish1.jpg" alt="Mysore Dosa">
+
+        <div class="dish-info">
+          <h3>Mysore Dosa</h3>
+          <p>Traditional Karnataka style crispy dosa with rich chutneys.</p>
+          <span>₹220</span>
+        </div>
+      </div>
+
+      <div class="dish-card glass reveal">
+        <img src="assets/images/dish2.jpg" alt="Veg Lasagna">
+
+        <div class="dish-info">
+          <h3>Veg Lasagna</h3>
+          <p>Italian layered perfection with creamy cheese and vegetables.</p>
+          <span>₹380</span>
+        </div>
+      </div>
+
+      <div class="dish-card glass reveal">
+        <img src="assets/images/dish3.jpg" alt="Thai Curry">
+
+        <div class="dish-info">
+          <h3>Thai Green Curry</h3>
+          <p>Luxury Thai vegetarian experience with aromatic herbs.</p>
+          <span>₹450</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- MENU SECTION -->
+  <section class="menu section" id="menu">
+
+    <div class="section-title reveal">
+      <span>OUR MENU</span>
+      <h2>Explore Our Cuisine</h2>
+    </div>
+
+    <div class="menu-filters reveal">
+      <a href="#all"><button class="active">All</button></a>
+      <a href="#south-indian"><button>South Indian</button></a>
+      <a href="#north-indian"><button>North Indian</button></a>
+      <a href="#global"><button>Global</button></a>
+    </div>
+
+    <div class="menu-grid">
+
+      <div class="menu-item glass reveal" id="south-indian">
+        <h3>Masala Dosa</h3>
+        <span>₹180</span>
+      </div>
+
+      <div class="menu-item glass reveal" id="south-indian">
+        <h3>Mysore Dosa</h3>
+        <span>₹220</span>
+      </div>
+
+      <div class="menu-item glass reveal" id="south-indian">
+        <h3>Benne Dosa</h3>
+        <span>₹240</span>
+      </div>
+
+      <div class="menu-item glass reveal" id="north-indian">
+        <h3>Paneer Butter Masala</h3>
+        <span>₹320</span>
+      </div>
+
+      <div class="menu-item glass reveal" id="north-indian">
+        <h3>Kadai Paneer</h3>
+        <span>₹340</span>
+      </div>
+
+      <div class="menu-item glass reveal" id="global">
+        <h3>Veg Biryani</h3>
+        <span>₹300</span>
+      </div>
+
+      <div class="menu-item glass reveal" id="global">
+        <h3>Thai Green Curry</h3>
+        <span>₹450</span>
+      </div>
+
+      <div class="menu-item glass reveal" id="global">
+        <h3>Veg Sushi</h3>
+        <span>₹480</span>
+      </div>
+
+      <div class="menu-item glass reveal" id="global">
+        <h3>Veg Pizza</h3>
+        <span>₹420</span>
+      </div>
+
+      <div class="menu-item glass reveal" id="global">
+        <h3>Falafel Wrap</h3>
+        <span>₹360</span>
+      </div>
+
+      <div class="menu-item glass reveal" id="north-indian">
+        <h3>Rajma Chawal</h3>
+        <span>₹260</span>
+      </div>
+
+      <div class="menu-item glass reveal" id="north-indian">
+        <h3>Dal Makhani</h3>
+        <span>₹280</span>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section class="experience section">
+
+    <div class="experience-content reveal">
+      <span>PREMIUM EXPERIENCE</span>
+      <h2>Designed For Memorable Dining</h2>
+      <p>
+        From luxurious interiors to handcrafted cuisine,
+        every moment at VegSavage is curated for elegance.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery section" id="gallery">
+
+    <div class="section-title reveal">
+      <span>GALLERY</span>
+      <h2>Luxury Food Experience</h2>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item tall reveal">
+        <img src="assets/images/gallery1.jpg" alt="Gallery Image">
+      </div>
+
+      <div class="gallery-item reveal">
+        <img src="assets/images/gallery2.jpg" alt="Gallery Image">
+      </div>
+
+      <div class="gallery-item wide reveal">
+        <img src="assets/images/gallery3.jpg" alt="Gallery Image">
+      </div>
+
+      <div class="gallery-item reveal">
+        <img src="assets/images/gallery4.jpg" alt="Gallery Image">
+      </div>
+
+      <div class="gallery-item reveal">
+        <img src="assets/images/gallery5.jpg" alt="Gallery Image">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section">
+
+    <div class="section-title reveal">
+      <span>REVIEWS</span>
+      <h2>What Our Customers Say</h2>
+    </div>
+
+    <div class="testimonial-track">
+
+      <div class="testimonial-card glass">
+        <p>
+          “One of the best vegetarian dining experiences in Bengaluru.”
+        </p>
+
+        <h4>Rahul Sharma</h4>
+      </div>
+
+      <div class="testimonial-card glass">
+        <p>
+          “Luxury ambiance and unforgettable flavors.”
+        </p>
+
+        <h4>Sneha Reddy</h4>
+      </div>
+
+      <div class="testimonial-card glass">
+        <p>
+          “Their Mysore Dosa is absolutely legendary.”
+        </p>
+
+        <h4>Arjun Verma</h4>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- RESERVATION -->
+  <section class="reservation section" id="reservation">
+
+    <div class="reservation-box glass reveal">
+
+      <div class="section-title">
+        <span>BOOK TABLE</span>
+        <h2>Reserve Your Experience</h2>
+      </div>
+
+      <form>
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Email Address">
+
+        <input type="date">
+
+        <input type="time">
+
+        <button class="primary-btn">
+          Reserve Table
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section">
+
+    <div class="section-title reveal">
+      <span>FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-container">
+
+      <div class="faq-item glass reveal">
+        <div class="faq-question">
+          Do you serve only vegetarian food?
+        </div>
+
+        <div class="faq-answer">
+          Yes, VegSavage is a 100% pure vegetarian luxury restaurant.
+        </div>
+      </div>
+
+      <div class="faq-item glass reveal">
+        <div class="faq-question">
+          Do you provide catering services?
+        </div>
+
+        <div class="faq-answer">
+          Yes, we provide premium catering for weddings and corporate events.
+        </div>
+      </div>
+
+      <div class="faq-item glass reveal">
+        <div class="faq-question">
+          Is reservation mandatory?
+        </div>
+
+        <div class="faq-answer">
+          Reservations are recommended for weekends and special dining experiences.
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+
+    <div class="footer-overlay"></div>
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+
+        <h2>VegSavage</h2>
+
+        <p>
+          A premium pure vegetarian dining destination where authentic Indian flavors
+          meet luxury culinary artistry.
+        </p>
+
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </div>
+
+      </div>
+
+      <div class="footer-links">
+
+        <h3>Quick Links</h3>
+
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reservation">Reservations</a>
+        <a href="#contact">Contact</a>
+
+      </div>
+
+      <div class="footer-menu">
+
+        <h3>Popular Dishes</h3>
+
+        <p>Masala Dosa</p>
+        <p>Mysore Dosa</p>
+        <p>Paneer Butter Masala</p>
+        <p>Veg Biryani</p>
+        <p>Thai Green Curry</p>
+        <p>Veg Lasagna</p>
+
+      </div>
+
+      <div class="footer-contact">
+
+        <h3>Contact Info</h3>
+
+        <p>
+          21 Luxury Avenue,
+          Bengaluru, Karnataka
+        </p>
+
+        <p>
+          +91 9876543210
+        </p>
+
+        <p>
+          contact@vegsavage.com
+        </p>
+
+        <p>
+          Mon - Sun : 11:00 AM - 11:00 PM
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="footer-middle glass">
+
+      <div class="newsletter-content">
+
+        <h2>
+          Subscribe For Exclusive Dining Updates
+        </h2>
+
+        <p>
+          Get offers, new dishes, chef specials and premium event updates.
+        </p>
+
+      </div>
+
+      <form class="newsletter-form">
+
+        <input type="email" placeholder="Enter your email">
+
+        <button type="submit" class="primary-btn">
+          Subscribe
+        </button>
+
+      </form>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="footer-bottom-left">
+        © 2026 VegSavage. All Rights Reserved.
+      </div>
+
+      <div class="footer-bottom-center">
+       <p> made with ❤️ by <a href="https://phanirajbnportfolio.vercel.app">Phaniraj</a></p>
+      </div>
+
+      <div class="footer-bottom-right">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Cookies</a>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- JS -->
+  <script src="app.js"></script>
+
+</body>
+</html>
+
