@@ -1,84 +1,53 @@
 /* =========================
-   VEGSAVAGE - RESPONSIVE.CSS
+   PERFECT MOBILE RESPONSIVE
 ========================= */
 
-/* =========================
-   LARGE LAPTOPS
-========================= */
-
-@media(max-width:1400px){
+@media (max-width: 1200px){
 
   .hero-content h1{
-    font-size:5.5rem;
+    font-size:5rem;
   }
 
-  .section-title h2{
-    font-size:3.5rem;
+  .menu-grid{
+    grid-template-columns:repeat(2,1fr);
   }
 
   .dish-grid{
     grid-template-columns:repeat(2,1fr);
   }
 
-  .menu-grid{
-    grid-template-columns:repeat(3,1fr);
-  }
-
 }
 
 /* =========================
-   LAPTOPS
+   TABLET
 ========================= */
 
-@media(max-width:1200px){
+@media (max-width: 992px){
 
   section{
-    padding:100px 6%;
+    padding:90px 6%;
   }
-
-  .hero-content h1{
-    font-size:4.8rem;
-  }
-
-  .about-grid{
-    grid-template-columns:1fr;
-  }
-
-  .gallery-grid{
-    grid-template-columns:repeat(3,1fr);
-  }
-
-  .footer-top{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .footer-middle{
-    flex-direction:column;
-    align-items:flex-start;
-  }
-
-}
-
-/* =========================
-   TABLETS
-========================= */
-
-@media(max-width:992px){
 
   .navbar{
-    padding:18px 25px;
+    width:94%;
+    padding:18px 22px;
   }
 
   nav{
-    gap:20px;
+    gap:18px;
   }
 
-  nav a{
-    font-size:0.95rem;
+  .hero{
+    padding-top:160px;
+  }
+
+  .hero-content{
+    max-width:700px;
   }
 
   .hero-content h1{
     font-size:4rem;
+    line-height:1.1;
   }
 
   .hero-content p{
@@ -86,93 +55,119 @@
   }
 
   .floating-card{
-    width:180px;
+    display:none;
   }
 
-  .floating-card img{
-    height:140px;
+  .about-grid,
+  .footer-top{
+    grid-template-columns:1fr;
   }
 
   .stats-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:repeat(3,1fr);
   }
 
   .dish-grid{
     grid-template-columns:1fr;
   }
 
-  .menu-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
   .gallery-grid{
     grid-template-columns:repeat(2,1fr);
-  }
-
-  .testimonial-card{
-    min-width:320px;
-  }
-
-  .newsletter-form{
-    flex-direction:column;
-    width:100%;
-  }
-
-  .newsletter-form input{
-    width:100%;
   }
 
 }
 
 /* =========================
-   MOBILE NAVIGATION
+   MOBILE
 ========================= */
 
-@media(max-width:768px){
+@media (max-width: 768px){
 
   body{
-    cursor:auto;
+    overflow-x:hidden;
   }
 
   .cursor{
     display:none;
   }
 
+  section{
+    padding:80px 5%;
+  }
+
+  /* NAVBAR */
+
   .navbar{
+    position:fixed;
     top:15px;
-    width:95%;
-    padding:18px 20px;
-    border-radius:24px;
-    flex-wrap:wrap;
-    gap:20px;
+    left:50%;
+    transform:translateX(-50%);
+    width:92%;
+    padding:20px;
+    border-radius:30px;
+
+    flex-direction:column;
+    gap:22px;
+  }
+
+  .logo{
+    font-size:2rem;
   }
 
   nav{
     width:100%;
-    justify-content:center;
-    flex-wrap:wrap;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
     gap:16px;
+    text-align:center;
+  }
+
+  nav a{
+    font-size:0.95rem;
   }
 
   .nav-btn{
     width:100%;
+    padding:16px;
   }
 
+  /* HERO */
+
   .hero{
-    padding-top:180px;
+    min-height:100vh;
+    padding-top:260px;
+    padding-left:5%;
+    padding-right:5%;
+  }
+
+  .hero-content{
+    width:100%;
+    max-width:100%;
+  }
+
+  .hero-tag{
+    font-size:0.75rem;
+    padding:10px 18px;
   }
 
   .hero-content h1{
-    font-size:3.2rem;
+
+    font-size:3.4rem;
+    line-height:0.95;
+    letter-spacing:-2px;
+
+    word-break:break-word;
   }
 
   .hero-content p{
+    margin-top:25px;
     font-size:0.95rem;
     line-height:1.8;
   }
 
   .hero-buttons{
     flex-direction:column;
+    width:100%;
     align-items:center;
   }
 
@@ -182,117 +177,76 @@
     max-width:320px;
   }
 
-  .floating-card{
-    display:none;
+  /* TITLES */
+
+  .section-title{
+    margin-bottom:50px;
   }
 
   .section-title h2{
-    font-size:2.8rem;
+    font-size:2.4rem;
+    line-height:1.2;
   }
 
-  .experience-content h2{
-    font-size:2.8rem;
+  /* ABOUT */
+
+  .about-content p{
+    font-size:0.95rem;
+    line-height:2;
+  }
+
+  .stats-grid{
+    grid-template-columns:1fr;
+  }
+
+  .stat-card{
+    padding:30px;
+  }
+
+  /* MENU */
+
+  .menu-filters{
+    gap:12px;
+  }
+
+  .menu-filters button{
+    width:100%;
   }
 
   .menu-grid{
     grid-template-columns:1fr;
   }
 
+  .menu-item{
+    padding:28px;
+  }
+
+  /* EXPERIENCE */
+
+  .experience-content h2{
+    font-size:2.5rem;
+  }
+
+  /* GALLERY */
+
   .gallery-grid{
     grid-template-columns:1fr;
   }
 
-  .wide{
-    grid-column:span 1;
-  }
-
+  .wide,
   .tall{
-    grid-row:span 1;
+    grid-column:unset;
+    grid-row:unset;
   }
 
-  .reservation-box{
-    padding:40px 25px;
+  .gallery-item{
+    height:300px;
   }
 
-  .footer-top{
-    grid-template-columns:1fr;
-  }
+  /* TESTIMONIAL */
 
-  .footer-middle{
-    padding:35px 25px;
-  }
-
-  .newsletter-content h2{
-    font-size:1.8rem;
-  }
-
-  .footer-bottom{
-    flex-direction:column;
-    text-align:center;
-  }
-
-}
-
-/* =========================
-   SMALL MOBILE
-========================= */
-
-@media(max-width:576px){
-
-  section{
-    padding:90px 5%;
-  }
-
-  .logo{
-    font-size:1.7rem;
-  }
-
-  nav{
-    gap:12px;
-  }
-
-  nav a{
-    font-size:0.9rem;
-  }
-
-  .hero-content h1{
-    font-size:2.5rem;
-    line-height:1.2;
-  }
-
-  .hero-tag{
-    font-size:0.8rem;
-    padding:8px 16px;
-  }
-
-  .section-title span{
-    font-size:12px;
-  }
-
-  .section-title h2{
-    font-size:2.2rem;
-  }
-
-  .about-content p,
-  .experience-content p{
-    font-size:0.95rem;
-    line-height:1.9;
-  }
-
-  .dish-card img{
-    height:260px;
-  }
-
-  .dish-info{
-    padding:25px;
-  }
-
-  .dish-info h3{
-    font-size:1.5rem;
-  }
-
-  .menu-item{
-    padding:28px;
+  .testimonial-track{
+    gap:20px;
   }
 
   .testimonial-card{
@@ -300,20 +254,43 @@
     padding:30px;
   }
 
+  /* RESERVATION */
+
   .reservation-box{
-    padding:30px 20px;
+    padding:35px 22px;
   }
 
   input{
-    padding:16px;
+    width:100%;
   }
 
-  .footer-brand h2{
-    font-size:2.2rem;
+  /* FOOTER */
+
+  .footer-top{
+    grid-template-columns:1fr;
+    gap:50px;
   }
 
-  .newsletter-content h2{
-    font-size:1.5rem;
+  .footer-middle{
+    padding:35px 25px;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .newsletter-form{
+    width:100%;
+    flex-direction:column;
+  }
+
+  .newsletter-form input{
+    width:100%;
+    min-width:100%;
+  }
+
+  .footer-bottom{
+    flex-direction:column;
+    text-align:center;
+    gap:20px;
   }
 
   .footer-bottom-right{
@@ -324,87 +301,86 @@
 }
 
 /* =========================
-   EXTRA SMALL DEVICES
+   SMALL MOBILE
 ========================= */
 
-@media(max-width:420px){
+@media (max-width: 480px){
+
+  .navbar{
+    padding:18px 16px;
+  }
+
+  nav{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .hero{
+    padding-top:300px;
+  }
 
   .hero-content h1{
-    font-size:2.1rem;
+
+    font-size:2.5rem;
+    line-height:1.02;
+
   }
 
   .hero-content p{
     font-size:0.88rem;
   }
 
-  .primary-btn,
-  .secondary-btn,
-  .nav-btn{
-    padding:14px 20px;
-    font-size:0.9rem;
+  .hero-tag{
+    font-size:0.68rem;
   }
 
   .section-title h2{
-    font-size:1.9rem;
+    font-size:2rem;
   }
 
   .experience-content h2{
     font-size:2rem;
   }
 
-  .stat-card h3{
-    font-size:2.4rem;
+  .dish-card img{
+    height:240px;
   }
 
   .dish-info h3{
-    font-size:1.3rem;
+    font-size:1.4rem;
   }
 
-  .footer-middle{
-    gap:25px;
+  .testimonial-card{
+    min-width:240px;
   }
 
-  .newsletter-form input{
-    min-width:unset;
+  .footer-brand h2{
+    font-size:2.2rem;
   }
 
 }
 
 /* =========================
-   ULTRA WIDE SCREENS
+   EXTRA SMALL DEVICES
 ========================= */
 
-@media(min-width:1800px){
-
-  body{
-    max-width:1800px;
-    margin:auto;
-  }
+@media (max-width: 380px){
 
   .hero-content h1{
-    font-size:8rem;
+    font-size:2.1rem;
   }
 
-  .section-title h2{
-    font-size:5rem;
+  nav a{
+    font-size:0.82rem;
   }
 
-  .experience-content h2{
-    font-size:5rem;
+  .logo{
+    font-size:1.7rem;
+  }
+
+  .primary-btn,
+  .secondary-btn,
+  .nav-btn{
+    font-size:0.9rem;
   }
 
 }
-
-
-/* ── about.jpg
-│   │   ├── dosa.jpg
-│   │   ├── paneer.jpg
-│   │   ├── noodles.jpg
-│   │   ├── dish1.jpg
-│   │   ├── dish2.jpg
-│   │   ├── dish3.jpg
-│   │   ├── gallery1.jpg
-│   │   ├── gallery2.jpg
-│   │   ├── gallery3.jpg
-│   │   ├── gallery4.jpg
-│   │   ├── gallery5.jpg */
