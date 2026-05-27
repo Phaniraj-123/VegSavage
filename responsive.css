@@ -29,12 +29,15 @@
   }
 
   .navbar{
-    width:94%;
+    width:auto;
     padding:18px 22px;
   }
 
   nav{
     gap:18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero{

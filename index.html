@@ -53,6 +53,17 @@
 
   </header>
 
+  <!-- <div class="mobile-nav" id="nav-mobile">
+    <ul>
+      <li><a href="#hero" onclick="closeMobileMenu()">Home</a></li>
+      <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+      <li><a href="#menu" onclick="closeMobileMenu()">Menu</a></li>
+      <li><a href="#gallery" onclick="closeMobileMenu()">Gallery</a></li>
+      <li><a href="#reservation" onclick="closeMobileMenu()">Reservation</a></li>
+      <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+  </div> -->
+
   <!-- HERO SECTION -->
   <section class="hero" id="hero">
 
@@ -200,71 +211,71 @@
       <h2>Explore Our Cuisine</h2>
     </div>
 
-    <div class="menu-filters reveal">
-      <a href="#all"><button class="active">All</button></a>
-      <a href="#south-indian"><button>South Indian</button></a>
-      <a href="#north-indian"><button>North Indian</button></a>
-      <a href="#global"><button>Global</button></a>
+    <div class="menu-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="south-indian">South Indian</button>
+      <button class="filter-btn" data-filter="north-indian">North Indian</button>
+      <button class="filter-btn" data-filter="global">Global</button>
     </div>
 
     <div class="menu-grid">
 
-      <div class="menu-item glass reveal" id="south-indian">
+      <div class="menu-item glass reveal" data-category="south-indian">
         <h3>Masala Dosa</h3>
         <span>₹180</span>
       </div>
 
-      <div class="menu-item glass reveal" id="south-indian">
+      <div class="menu-item glass reveal" data-category="south-indian">
         <h3>Mysore Dosa</h3>
         <span>₹220</span>
       </div>
 
-      <div class="menu-item glass reveal" id="south-indian">
+      <div class="menu-item glass reveal" data-category="south-indian">
         <h3>Benne Dosa</h3>
         <span>₹240</span>
       </div>
 
-      <div class="menu-item glass reveal" id="north-indian">
+      <div class="menu-item glass reveal" data-category="north-indian">
         <h3>Paneer Butter Masala</h3>
         <span>₹320</span>
       </div>
 
-      <div class="menu-item glass reveal" id="north-indian">
+      <div class="menu-item glass reveal" data-category="north-indian">
         <h3>Kadai Paneer</h3>
         <span>₹340</span>
       </div>
 
-      <div class="menu-item glass reveal" id="global">
+      <div class="menu-item glass reveal" data-category="global">
         <h3>Veg Biryani</h3>
         <span>₹300</span>
       </div>
 
-      <div class="menu-item glass reveal" id="global">
+      <div class="menu-item glass reveal" data-category="global">
         <h3>Thai Green Curry</h3>
         <span>₹450</span>
       </div>
 
-      <div class="menu-item glass reveal" id="global">
+      <div class="menu-item glass reveal" data-category="global">
         <h3>Veg Sushi</h3>
         <span>₹480</span>
       </div>
 
-      <div class="menu-item glass reveal" id="global">
+      <div class="menu-item glass reveal" data-category="global">
         <h3>Veg Pizza</h3>
         <span>₹420</span>
       </div>
 
-      <div class="menu-item glass reveal" id="global">
+      <div class="menu-item glass reveal" data-category="global">
         <h3>Falafel Wrap</h3>
         <span>₹360</span>
       </div>
 
-      <div class="menu-item glass reveal" id="north-indian">
+      <div class="menu-item glass reveal" data-category="north-indian">
         <h3>Rajma Chawal</h3>
         <span>₹260</span>
       </div>
 
-      <div class="menu-item glass reveal" id="north-indian">
+      <div class="menu-item glass reveal" data-category="north-indian">
         <h3>Dal Makhani</h3>
         <span>₹280</span>
       </div>
@@ -554,6 +565,7 @@
     </div>
 
   </footer>
+
 
   <!-- JS -->
   <script src="app.js"></script>

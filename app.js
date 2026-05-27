@@ -182,22 +182,41 @@ window.addEventListener('scroll', () => {
    MENU FILTER BUTTONS
 */
 
-const filterButtons =
-  document.querySelectorAll('.menu-filters button');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const menuItems = document.querySelectorAll('.menu-item');
 
 filterButtons.forEach(button => {
 
   button.addEventListener('click', () => {
 
+    // ACTIVE BUTTON
     filterButtons.forEach(btn => {
       btn.classList.remove('active');
     });
 
     button.classList.add('active');
 
+    // GET FILTER
+    const filter = button.dataset.filter;
+
+    // FILTER ITEMS
+    menuItems.forEach(item => {
+
+      const category = item.dataset.category;
+
+      if (filter === 'all' || category === filter) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+
+    });
+
   });
 
 });
+
+ 
 
 /*
    COUNTER ANIMATION
@@ -312,7 +331,7 @@ function autoSlide(){
 
   if(!testimonialTrack) return;
 
-  sliderPosition -= 1;
+  sliderPosition = 1;
 
   testimonialTrack.style.transform =
     `translateX(${sliderPosition}px)`;

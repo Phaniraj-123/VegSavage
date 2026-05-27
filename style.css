@@ -1,6 +1,4 @@
-/* =========================
-   VEGSAVAGE - STYLE.CSS
-========================= */
+
 
 :root {
   --primary: #0f5132;
@@ -635,9 +633,7 @@ input::placeholder{
   max-height:200px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
   position:relative;
@@ -782,9 +778,9 @@ footer{
   color:#3ddc84;
 }
 
-/* =========================
+/*
    REVEAL ANIMATION
-========================= */
+ */
 
 .reveal{
   opacity:0;
